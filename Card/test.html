@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Card UI Design</title>
+
+    <!-- Vendor Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap");
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Poppins", sans-serif;
+            background: #000;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 900px;
+            height: 600px;
+            background: #fff;
+            margin: 20px;
+        }
+        
+        .container .imgBx {
+            width: 50%;
+            height: 100%;
+            transition: 0.3s linear;
+            background-color: #000;
+        }
+        
+        .container .imgBx img {
+            width: 100%;
+            height: 100%;
+            transition: 0.9s linear;
+        }
+        
+        .container .details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 40px;
+        }
+        
+        .container .details h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.4em;
+            line-height: 1em;
+            color: #444;
+        }
+        
+        .container .details p {
+            max-width: 85%;
+            margin-left: 15%;
+            color: #333;
+            font-size: 15px;
+            margin-bottom: 36px;
+        }
+        
+        .container .details h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+            color: #a2a2a2;
+            float: left;
+        }
+        
+        .container .details button {
+            background: #000;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 15px 20px;
+            margin-top: 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 40px;
+            float: right;
+        }
+        /* responsive */
+        
+        @media (max-width: 1080px) {
+            .container {
+                height: auto;
+            }
+            .container .imgBx {
+                padding: 40px;
+                box-sizing: border-box;
+                width: 100% !important;
+                height: 500px !important;
+                text-align: center;
+                overflow: hidden;
+            }
+            .details {
+                width: 100% !important;
+                height: auto;
+                padding: 20px;
+            }
+            .container .details p {
+                margin-left: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgBx">
+            <img src="https://spcpinnacle.in/images/Webdesign.JPG" alt="Nike Jordan Proto-Lyte Image" />
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Product Launch<br /></h2>
+                <p>
+                    <ol>
+                        <li> Two Participants forms a team IT Product must be launched through video of 4 min.</li>
+                        <li>Lead Characters in video must be the participants of event.
+                        </li>
+                        <li> Video should be submitted in a pen drive prior to the event to the respectiveevent head.</li>
+                    </ol>
+
+                </p>
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+</body>
+
+</html>

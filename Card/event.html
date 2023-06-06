@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      header {
+        background-color: black;
+        position: relative;
+        min-height: 10dvh;
+        width: 100dvw;
+      }
+
+      nav img {
+        width: 1.6cm;
+        margin-left: 1em;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.4rem 1rem;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 1rem 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+      }
+
+      @media (max-width: 40em) {
+        nav {
+          flex-direction: column;
+          gap: 1em;
+          background-color: black;
+        }
+      }
+
+      section {
+        background-color: black;
+        width: 100vw;
+        min-height: 90dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 900px;
+        height: 600px;
+        background: #fff;
+      }
+
+      .imgBx {
+        flex-basis: 50%;
+        height: 100%;
+      }
+
+      .imgBx img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .detalis {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 2.4em;
+        line-height: 1em;
+      }
+
+      .detalis ul {
+        margin: auto;
+        line-height: 1.6;
+        padding: 1rem;
+      }
+
+      .content a {
+        background-color: black;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 24px;
+        float: right;
+        margin-bottom: 1em;
+      }
+
+      @media (max-width: 40em) {
+        .container {
+          margin: 1em;
+          width: 100% !important;
+          height: auto;
+        }
+        .imgBx {
+          padding: 1rem;
+          flex-basis: 100%;
+          height: 500px;
+        }
+        .detalis {
+          flex-basis: 100%;
+        }
+        .detalis ul {
+          margin-bottom: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="./img/sdm_logo.png" alt="" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Register</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="imgBx">
+          <img src="https://spcpinnacle.in/images/ProductLaunch.JPG" alt="" />
+        </div>
+        <div class="detalis">
+          <div class="content">
+            <h1>Product Launch</h1>
+
+            <ul>
+              <li>3-6 Participants forms a team.</li>
+              <li>
+                All kinds of dance forms like semi-classical, contemporary,
+                Freestyle, western and folk are included.
+              </li>
+              <li>Judges and organizers' decisions are final and binding.</li>
+              <li>Judges and organizers' decisions are final and binding.</li>
+
+              <li id="li-add"></li>
+            </ul>
+
+            <a href="">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <script>
+      const url = new URLSearchParams(window.location.search);
+      const par = document.getElementById("par");
+      const event = url.get("event");
+      par.innerText = event;
+    </script> -->
+    <footer>
+      <p>Copyright &copy; Hemanth Made with by <span>❤</span> Hemanth</p>
+    </footer>
+    <script>
+      const par = document.getElementById("li-add");
+      const evnts = [
+        [
+          "https://spcpinnacle.in/images/ProductLaunch.JPG",
+          " <li>An instance of vulgarity/disturbing content will lead to a forceful halt of performance and immediate disqualification.</li> <li> No use of any powdered substances/fire/water/animals/smoke machine on stage.</li>",
+        ],
+      ];
+      console.log(evnts[0][0]);
+      par.innerHTML = evnts[0][1];
+    </script>
+  </body>
+</html>

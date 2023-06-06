@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="../img/sdm_logo.png" alt=" " />
+        <ul>
+          <li><a href=" ">Home</a></li>
+          <li><a href=" ">About</a></li>
+          <li><a href=" ">Events</a></li>
+          <li><a href=" ">Our Team</a></li>
+          <li><a href=" ">Register</a></li>
+          <li><a href=" ">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="events">
+          <div>
+            <img id="img" alt="" />
+          </div>
+          <div>
+            <p id="p"></p>
+          </div>
+        </div>
+      </main>
+    </header>
+
+    <!-- <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const url=new URLSearchParams(window.location.search)
+      const greetingValue = urlParams.get("greeting ");
+      const event=urlParams.get("event ")
+      console.log(greetingValue);
+      a = ["Hemanth ", "John ", "Deva "];
+      console.log(a[]);
+      
+    </script> -->
+
+    <footer>
+      <p>Copyright &copy Elon Musk Made with BY <span>❤</span> Hemanth</p>
+    </footer>
+
+    <script>
+      const imgA = document.getElementById("img");
+      const pargr = document.getElementById("p");
+      const events = [
+        [
+          "../img/PaperPresentation.jpeg",
+          "<ul>One Participant forms a team.</ul><ul>Participants can use technological resources according to their needs and priority abiding by the rules.</ul> Multiple rounds will be held with elimination.Rules will be specific for particular rounds.",
+        ],
+        ["../img/PaperPresentation.jpeg", "Hemanth,hjdshdsds"],
+      ];
+
+      const url = new URLSearchParams(window.location.search);
+      const img = url.get("event");
+      imgA.setAttribute("src", events[img][0]);
+      pargr.innerHTML = events[img][1];
+    </script>
+  </body>
+</html>
+
+<!-- <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('greeting');
+  console.log(greetingValue);  
+</script> -->
+<!-- 
+     grid-auto-rows: minmax(100px, auto);
+ -->

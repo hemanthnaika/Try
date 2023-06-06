@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    min-height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/SDM-College_A4size-800x521.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav img {
+    width: 1.6cm;
+    margin-left: 1em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1rem 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+@media (max-width:40em) {
+    nav {
+        flex-direction: column;
+        gap: 1em;
+        background-color: black;
+    }
+    .hero {
+        bottom: 20%;
+    }
+    .hero a {
+        margin-top: 2em;
+    }
+}
+
+.hero h1 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: clamp(4rem, 7vw, 9rem);
+}
+
+.hero a {
+    width: 10em;
+    text-align: center;
+    background-color: blue;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* @media (min-width: 20em) {
+    .Component {
+        background-color: blue;
+    }
+} */
